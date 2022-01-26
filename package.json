@@ -4,7 +4,7 @@
   "description": "koa-getting-started",
   "main": "index.js",
   "scripts": {
-    "hello": "node hello.js",
+    "hello": "node hello/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
