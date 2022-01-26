@@ -1,5 +1,5 @@
 const Koa = require('koa');
-const app = new Koa();
+const app = module.exports = new Koa();
 
 // logger
 app.use(async (ctx, next) => {
@@ -27,4 +27,4 @@ app.use(async ctx => {
     ctx.body = 'Hello World';
 });
 
-app.listen(3000);
+if (!module.parent) app.listen(3000);
